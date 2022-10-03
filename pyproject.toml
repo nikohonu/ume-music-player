@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "ume-music-player"
+version = "0.1.0"
+description = "Simple music player"
+authors = ["Niko Honu <nikohonu@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "ume_music_player"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+peewee = "^3.15.3"
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^1.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+ump = "ume_music_player.__main__:main"
